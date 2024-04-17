@@ -1,0 +1,22 @@
+<!--
+ * File name: app-component.html
+ * File description: Providing structure for the components
+ * Author(s): Brock Hemsouvanh & Professor Richard Krasso https://www.youtube.com/watch?v=WDC2FvDTi_4
+ * Date created: 2024-04-04
+-->
+
+<br /><br />
+<div class="row">
+
+  <div class="col-sm-12">
+
+    <ul class="list-group">
+
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<!--
+ * File name: app-component.html
+ * File description: Providing structure for the components
+ * Author(s): Brock Hemsouvanh & Professor Richard Krasso https://www.youtube.com/watch?v=WDC2FvDTi_4
+ * Date created: 2024-03-30
+-->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Composer App</a>
+    <div class="navbar-nav">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+      <a class="nav-link" routerLink="/about">About</a>
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </div>
+  </div>
+</nav>
+<br /><br />
+
+<!-- Assignment Title -->
+<div class="assignment-title">
+  <h2>{{ assignment }}</h2>
+</div>
+
+<router-outlet></router-outlet>
+
+

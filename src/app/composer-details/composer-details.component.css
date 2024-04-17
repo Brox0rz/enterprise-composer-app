@@ -1,0 +1,11 @@
+/* composer-details.component.css */
+
+.float-right {
+  float: right;
+}
+
+.col-sm-12 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}

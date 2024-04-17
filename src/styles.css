@@ -1,0 +1,67 @@
+/**
+ * File name: styles.css
+ * File description: Stylesheet with all general styles for the composer-app.
+ * Author(s): Brock Hemsouvanh and Professor Richard Krasso
+ * Date created: 2024-03-30
+ */
+
+
+
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+/* Table styles */
+.table {
+  width: 50%;
+  margin: 5% auto;
+  color: #212529;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000; /* Add vertical line border between columns */
+}
+
+.table thead th {
+  vertical-align: bottom;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping for the table rows */
+}
+
+/* Utilities */
+.table .full-name,
+.table .genre {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .table {
+    width: 85%;
+  }
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+}
